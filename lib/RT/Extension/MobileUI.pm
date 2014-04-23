@@ -3,7 +3,7 @@ use strict;
 
 package RT::Extension::MobileUI;
 
-our $VERSION = "1.05";
+our $VERSION = "1.06";
 
 sub _encode_surrogates {
     my $uni = $_[0] - 0x10000;
@@ -26,7 +26,12 @@ sub EscapeJS {
 
 =head1 NAME
 
-RT::Extension::MobileUI - A phone friendly web interface for RT
+RT::Extension::MobileUI - DEPRECATED A phone friendly web interface for RT
+
+=head1 DEPRECATED
+
+A version of this module was integrated into RT in 4.0.0.  RT will
+automatically serve a mobile-friendly web interface on 4.0.0 or greater.
 
 =head1 DESCRIPTION
 
